@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gist Mill</title>
+  <meta name="description" content="The Gist Mill is a small independent studio in the early stages of building distilled, PT-focused tools: PT-GPT, Clipboard, Charteyes, and Chartears.">
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #f3f3f3;
+      --accent: #f5c76a;
+      --muted: #bbbbbb;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    header h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin: 0.25rem 0 0;
+      color: var(--muted);
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+    .projects-list {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .project {
+      padding: 1rem 1.25rem;
+      border: 1px solid #262626;
+      background: #111111;
+    }
+    .project h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .project p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gist Mill</h1>
+    <h2>Distilled intelligence. Engineered tools for real-world clinical work.</h2>
+  </header>
+
+  <main>
+    <section>
+      <h2>What We Do</h2>
+      <p>
+        The Gist Mill is a small, independent engineering studio focused on creating practical,
+        high-performance tools for physical therapy and healthcare workflows.
+        We build software that cuts through noise, automates complexity, and lets clinicians spend more
+        time on real patient care.
+      </p>
+      <p>
+        Our work is currently focused on making a robust digital clipboard that uses digital handwriting recognition through a stylus-based charting interface, future projects include
+        speech-to-text systems, a potential speech "prosthesis" that infers meaning through tone and other auditory communication beyond words — all designed for real clinic environments.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Projects</h2>
+      <div class="projects-list"
+        <div class="project">
+          <h3>Clipboard</h3>
+          <p>A stylus-first documentation interface for fast, structured charting at the point of care.</p>
+        </div>
+        <div class="project">
+          <h3>Charteyes</h3>
+          <p>A handwriting-to-text model built for real PT note-taking styles, abbreviations, and shorthand.</p>
+        </div>
+        <div class="project">
+          <h3>Chartears</h3>
+          <p>A speech-to-text engine designed for noisy clinic environments and natural speech.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>
+        Have a question, collaboration idea, or want to follow our work?
+        Reach out anytime at
+        <a href="mailto:contact@gistmill.studio">contact@gistmill.studio</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> The Gist Mill. All rights reserved.
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
