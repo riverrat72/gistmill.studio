@@ -121,6 +121,13 @@
       margin-bottom: 0.5rem;
       object-fit: cover;      /* crops top/bottom instead of becoming a skyscraper */
     }
+
+    .chapter-video:fullscreen,
+    .chapter-video:-webkit-full-screen {
+      object-fit: contain;
+      max-height: none;
+    }
+
     
     .chapter-caption {
       font-size: 0.9rem;
