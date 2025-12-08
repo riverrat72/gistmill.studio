@@ -79,6 +79,70 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    .noir-chapters {
+      margin: 3rem 0;
+    }
+    
+    .noir-chapters h2 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1.25rem;
+      color: var(--accent);
+    }
+    
+    .chapter-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    
+    .chapter-card {
+      flex: 1 1 280px;
+      background: #111111;
+      border: 1px solid #262626;
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+    }
+    
+    .chapter-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+    
+    /* THIS controls the video size */
+    .chapter-video {
+      width: 100%;
+      max-height: 320px;      /* reduce this number for a shorter box (e.g. 280) */
+      border-radius: 4px;
+      display: block;
+      margin-bottom: 0.5rem;
+      object-fit: cover;      /* crops top/bottom instead of becoming a skyscraper */
+    }
+    
+    .chapter-caption {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    
+    .chapter-placeholder {
+      font-size: 0.9rem;
+      color: var(--muted);
+      border: 1px dashed #444444;
+      border-radius: 4px;
+      padding: 1.2rem 0.9rem;
+    }
+    
+    /* Mobile: stack the cards vertically */
+    @media (max-width: 800px) {
+      .chapter-grid {
+        flex-direction: column;
+      }
+    }
+
+    
     footer {
       text-align: center;
       padding: 1.5rem 1rem 2rem;
